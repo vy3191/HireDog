@@ -1,0 +1,321 @@
+/*
+ * General/Utility Styles
+*/
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+body {
+  margin: 0;
+  background: rgb(245, 245, 245);
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 0.875rem;
+  color: rgb(86, 90, 92);
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  font-weight: bold;
+  color: rgb(255, 89, 95);
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+
+/*
+ * Button styles
+*/
+
+.button {
+  background: rgb(255, 89, 95);
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.75rem 5rem;
+  border-bottom: 1px solid rgb(227, 25, 29);
+  border-radius: 2px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/*--------------------
+container styles
+--------------------------*/
+container {
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
+
+/*-----------------------
+header and Image-styles
+------------------------*/
+header {
+  background: #fff;
+}
+img.logo {
+  border-right:2px solid #DCE0E0;
+}
+ section.hero img {
+  width: 100%;
+}
+
+/*----------------------
+section styles
+-----------------------*/
+section.profile {
+  text-align: center;
+}
+section.booking{
+  text-align: center;
+}
+
+/*----------------
+section content
+-----------------*/
+.info {
+  background: #fff;
+  text-align: center;
+  padding: 25px;
+}
+div.owner-details img.pic {
+  border-radius: 100%;
+  margin: 20px 0 10px;
+}
+div.owner-details h3 {
+  font-weight: bold;
+  font-size: 18px;
+}
+div.pet-details {
+  margin: 15px 0 10px;
+
+}
+div.pet-details h1 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+div.icons div.svg  {
+  float: left;
+  width: 33.3%;
+  margin: 20px 0;
+
+}
+div.icons img.middle {
+  width:30px;
+  height:30px;
+}
+section.booking h1.fee {
+  font-size: 22px;
+  padding: 15px 0;
+}
+/*---------------
+section gray
+----------------*/
+section.gray {
+  background: #c6c6c6;
+  margin: 0;
+  padding: 0;
+  padding: 18px;
+}
+/*----------------
+section about
+-----------------*/
+section.about {
+  text-align: center;
+}
+section.about h3 {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: bold;
+  color: #565A5C;
+  margin-bottom: 27px;
+
+}
+section.about p {
+  font-family: "Open Sans";
+  font-size: 13px;
+  line-height: 22px;
+  color: #565A5C;
+  text-align: left;
+}
+section.about p.contact {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 18px;
+  color: #FF595F;
+  text-align: center;
+  margin: 23px 0;
+}
+/*-----------------
+section care
+---------------------*/
+section.gray section {
+  border-bottom: 1px solid rgba(0,0,0,.4);
+  margin: 30px 0;
+}
+section.care {
+  color: #000;
+  text-align: left;
+  padding-bottom: 30px;
+  line-height: 20px;
+}
+section.care h3 {
+  margin-bottom: 15px;
+}
+/*----------------
+section games
+--------------------*/
+section.games div.play>p{
+  display: inline-block;
+}
+section.games div, .games  h3 {
+  text-align: left;
+  margin: 10px 0;
+}
+section.games {
+  padding-bottom: 30px;
+}
+/*---------------------
+section photos
+----------------------*/
+section.photos {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+section.photos img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width:1060px ) {
+         .container {
+           width: 1040px;
+           margin: 0 auto;
+         }
+         .column{
+            float:left;
+         }
+         .info .profile {
+          width: 660px;
+          border-right: 1px solid #DCE0CE;
+         }
+         .info .booking {
+          width: 380px;
+         }
+         .info .owner-details {
+          width: 20%;
+         }
+         .info .pet-details {
+          width: 80%;
+          text-align: left;
+          padding-left: 25px;
+         }
+         .info .pet-details h1 {
+          font-family: "Open Sans";
+          font-size: 22px;
+          color: #666A6C;
+          margin-top: 28px;
+         }
+         .info .pet-details p{
+            font-size: 14px;
+            margin-top: 12px;
+         }
+         .owner-details {
+          margin-top: 30px;
+         }
+         .owner-details h3, .owner-details p, div.icons p {
+                font-size: 14px;
+                font-family: "Open Sans";
+                color: #909597;
+         }
+         .icons .svg {
+          padding: 0 20px;
+         }
+         section.booking {
+          padding: 45px 0;
+         }
+         .button {
+          display: inline-block;
+          width:274px;
+          font-family: "Open Sans";
+          font-size: 12px;
+          color: #666A6C;
+         }
+         section.gray .container {
+          margin-left: 310px;
+          width: 655px;
+         }
+         /*---------
+             section care
+         -----------*/
+          section.care {
+            min-height: 130px;
+          }
+          section.care .first {
+            width: 170px;
+          }
+          section.care .second {
+            width: 260px;
+          }
+          section.care .third {
+            width: 225px;
+          }
+          /*----------------
+          section games
+          -----------------*/
+          section.games .games-1 {
+             width: 170px;
+          }
+          section.games .games-2 {
+             width: 485px;
+          }
+          /*------------------------
+          section photos
+          --------------------------*/
+          section.photos div.column {
+            margin: 0;
+            padding: 0;
+          }
+          section.photos img.dogs {
+            width: 200px;
+            height: 300px;
+            margin: 28px 9px 30px;
+          }
+
+}
+#display {
+    height: 100%;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,.6);
+    text-align: center;
+    display: none;
+  }
+  #display img {
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 10%;
+
+}
+#display p {
+  color:#fff;
+  font-size: 24px;
+}
